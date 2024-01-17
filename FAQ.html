@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <link rel="stylesheet" href="FAQ.css">
+</head>
+<body>
+    <ul class="accordion">
+        <li>
+            <input type="radio" name="accordion" id="first">
+            <label for="first">Difference between Get & Post method?</label>
+            <div class="content">
+                <p>GET<br>
+                    Used to retrieve data from a server without making any modifications. GET is better for data that doesn't require security or have images or word documents. GET requests may return cached data.<br><br>
+                    POST<br>
+                    Used to submit data from the client to the server. POST is often used when submitting login or contact forms or uploading files and images to the server. POST never caches data.
+                </p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="second">
+            <label for="second">Difference between Inline & Internal CSS?</label>
+            <div class="content">
+                <p>Inline CSS<br>
+                    Inline CSS is applied directly within the HTML tags using the style attribute. The styles applied using inline CSS affect only the specific element to which the style attribute is attached.<br><br>
+                    Internal CSS<br>
+                    Internal CSS is placed within the style tag element in the head tag section of the HTML document.The styles applied using internal CSS affect all elements on the page that match the specified selectors. Internal CSS provides a way to maintain a consistent style for multiple elements.
+                </p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="third">
+            <label for="third">Difference between Inner HTML & Inner Text?</label>
+            <div class="content">
+                <p>Inner HTML<br>
+                    It is a property that allows you to get or set the HTML content within an element.When setting innerHTML, it can be used to inject new HTML code, including tags and elements. This makes it powerful but also potentially risky if the content is not sanitized to prevent security issues like cross-site scripting (XSS).<br><br>
+                    Inner TEXT<br>
+                    It is a property that allows you to get or set the text content within an element, excluding HTML tags. It deals only with the textual content, so any HTML tags within the content are treated as plain text. It is safer than innerHTML when dealing with user-generated or untrusted content because it automatically escapes HTML.
+                </p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="fourth">
+            <label for="fourth">Difference between Inline CSS & Inline Block CSS?</label>
+            <div class="content">
+                <p>Inline CSS<br>
+                    Inline elements do not start on a new line; they flow within the content, taking up only as much width as necessary.
+                    Width and height cannot be set explicitly, and margins and padding only affect the left and right sides, not the top and bottom.<br><br>
+                    Inline Block CSS<br>
+                    Similar to inline elements, inline-block elements do not start on a new line. However, they can have a specified width and height. Margins and padding affect all sides, allowing for more control over the spacing around the element compared to inline elements.
+                </p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="fifth">
+            <label for="fifth">Difference between HTTP & HTTPS?</label>
+            <div class="content">
+                <p>HTTP<br>
+                    HTTP is the standard protocol used for transmitting data between a user's web browser and the website they are connecting to. However, it does not provide any encryption or security measures. This means that the data exchanged between the user and the website, including sensitive information like login credentials or personal details, is transmitted in plain text.<br><br>
+                    HTTPS<br>
+                    HTTPS, on the other hand, is a secure version of HTTP. It incorporates an additional layer of security by using SSL/TLS (Secure Sockets Layer/Transport Layer Security) protocols to encrypt the data during transmission. This encryption ensures that even if someone intercepts the communication, they won't be able to understand or manipulate the data. Websites using HTTPS are identified by the "https://" in the URL, and they often display a padlock icon in the address bar, indicating a secure connection.
+                </p>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>
